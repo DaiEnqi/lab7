@@ -28,7 +28,7 @@ Step7:
 ![Image](Procedure7_edting2.png)
 This step I need to edit the code file to fix the failing test. So firstly I press the key:
 ```
-vim <space> L <tab> .java
+vim <space> L <tab> .java <enter>
 ```
 This helps me open the java file on terminal by using vim to edit.
 
@@ -49,9 +49,30 @@ I use the key to change the "1" to "2" which means the "index1" changed to "inde
 ![Image](Procedure7_edting5.png)
 The key:
 ```
-<esc> :wq!
+<esc> :wq! <enter>
 ```
 By using this key, I save and exit the vim.
 
 Step8:
-![
+![Image](Procedure8.png)
+The key:
+```
+bash <space> t <tab> <enter>
+```
+This step I run the tests again, demonstrating that they now succeed.
+
+Step9:
+![Image](Procedure9_addcommit.png)
+The key:
+```
+git <space> add <space> L <tab> <enter>
+git <space> commit <space> -m"Fixed <space> the <space> failure" <enter>
+```
+This step I commit and push the resulting change to my Github account. Firstly I add the updated file using git add and then commit it using git commit with the "Fixed the failure" message.
+
+![Image](Procedure9_push.png)
+The key:
+```
+git <space> push <space> origin <space> main <enter>
+```
+The last step I push the resulting change to my Github account. Up to now my baseline time is about 3 minutes.
